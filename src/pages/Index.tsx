@@ -79,11 +79,11 @@ export default function Index() {
       <header className="bg-gradient-to-r from-primary via-secondary to-accent text-white sticky top-0 z-50 shadow-lg">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <Icon name="Plane" size={32} className="animate-fade-in" />
-              <h1 className="text-3xl font-heading font-bold animate-fade-in">ЛС ТУР</h1>
+            <div className="flex items-center gap-2 sm:gap-3">
+              <Icon name="Plane" size={28} className="animate-fade-in sm:w-8 sm:h-8" />
+              <h1 className="text-xl sm:text-2xl md:text-3xl font-heading font-bold animate-fade-in">ЛС ТУР</h1>
             </div>
-            <nav className="hidden md:flex gap-6 animate-fade-in">
+            <nav className="hidden lg:flex gap-6 animate-fade-in">
               <a href="#services" className="hover:underline transition-all">
                 Услуги
               </a>
@@ -94,15 +94,16 @@ export default function Index() {
                 Контакты
               </a>
             </nav>
-            <Button variant="secondary" className="animate-fade-in">
-              <Icon name="Phone" size={18} className="mr-2" />
-              Заказать звонок
+            <Button variant="secondary" className="animate-fade-in text-sm sm:text-base px-3 sm:px-4 py-2">
+              <Icon name="Phone" size={16} className="mr-1 sm:mr-2 sm:w-[18px] sm:h-[18px]" />
+              <span className="hidden sm:inline">Заказать звонок</span>
+              <span className="sm:hidden">Звонок</span>
             </Button>
           </div>
         </div>
       </header>
 
-      <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[400px] sm:h-[500px] md:h-[600px] flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center z-0"
           style={{
@@ -113,25 +114,25 @@ export default function Index() {
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-secondary/80 to-accent/90" />
         </div>
         <div className="relative z-10 text-center text-white px-4 animate-fade-in-up">
-          <h2 className="text-5xl md:text-7xl font-heading font-bold mb-6 drop-shadow-2xl">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-4 sm:mb-6 drop-shadow-2xl leading-tight">
             Путешествия вашей мечты
           </h2>
-          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-lg">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 max-w-2xl mx-auto drop-shadow-lg">
             Организуем незабываемые путешествия по всему миру с 2010 года
           </p>
-          <Button size="lg" variant="secondary" className="text-lg px-8 py-6 animate-scale-in shadow-2xl">
-            <Icon name="Compass" size={24} className="mr-2" />
+          <Button size="lg" variant="secondary" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 animate-scale-in shadow-2xl">
+            <Icon name="Compass" size={20} className="mr-2 sm:w-6 sm:h-6" />
             Подобрать тур
           </Button>
         </div>
       </section>
 
-      <section id="services" className="py-20 bg-gradient-to-b from-white to-muted/30">
+      <section id="services" className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-white to-muted/30">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-4 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-center mb-3 sm:mb-4 animate-fade-in">
             Наши услуги
           </h2>
-          <p className="text-center text-muted-foreground text-lg mb-12 animate-fade-in">
+          <p className="text-center text-muted-foreground text-base sm:text-lg mb-8 sm:mb-12 animate-fade-in px-4">
             Мы предлагаем широкий спектр туристических услуг для любых целей
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -165,12 +166,12 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="destinations" className="py-20 bg-gradient-to-b from-muted/30 to-white">
+      <section id="destinations" className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-muted/30 to-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-center mb-3 sm:mb-4">
             Популярные направления
           </h2>
-          <p className="text-center text-muted-foreground text-lg mb-12">
+          <p className="text-center text-muted-foreground text-base sm:text-lg mb-8 sm:mb-12 px-4">
             Откройте для себя самые красивые места планеты
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -204,11 +205,11 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-gradient-to-br from-primary via-secondary to-accent text-white">
+      <section id="contact" className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-primary via-secondary to-accent text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">Свяжитесь с нами</h2>
-            <p className="text-xl mb-12 opacity-90">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold mb-4 sm:mb-6">Свяжитесь с нами</h2>
+            <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 opacity-90 px-4">
               Наши эксперты помогут подобрать идеальное путешествие для вас
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -238,9 +239,10 @@ export default function Index() {
                 <p className="text-lg">Ежедневно 10:00 - 20:00</p>
               </div>
             </div>
-            <Button size="lg" variant="secondary" className="text-lg px-10 py-6 shadow-2xl animate-scale-in">
-              <Icon name="MessageCircle" size={24} className="mr-2" />
-              Написать в WhatsApp
+            <Button size="lg" variant="secondary" className="text-base sm:text-lg px-6 sm:px-10 py-4 sm:py-6 shadow-2xl animate-scale-in">
+              <Icon name="MessageCircle" size={20} className="mr-2 sm:w-6 sm:h-6" />
+              <span className="hidden sm:inline">Написать в WhatsApp</span>
+              <span className="sm:hidden">WhatsApp</span>
             </Button>
           </div>
         </div>
